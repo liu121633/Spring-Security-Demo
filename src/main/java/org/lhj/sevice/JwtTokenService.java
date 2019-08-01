@@ -1,9 +1,10 @@
-package org.lhj.config;
+package org.lhj.sevice;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.slf4j.Slf4j;
+import org.lhj.config.JwtTokenProperties;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
@@ -19,9 +20,8 @@ import java.util.Map;
  */
 @Slf4j
 @Component
-public class JwtTokenUtil implements Serializable {
+public class JwtTokenService {
 
-    private static final long serialVersionUID = -3301605591108950415L;
 
     private static final String CLAIM_KEY_USERNAME = "sub";
     private static final String CLAIM_KEY_CREATED = "created";

@@ -12,4 +12,7 @@ GET http://localhost:8080/auth/info
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaGoiLCJjcmVhdGVkIjoxNTY0NjUzMzU2NDI0LCJleHAiOjE1Nzc2MTMzNTZ9.yM3cMmjzI3PDFTzyrqp2NzNO5Z2V1Y55zV-5Qlpd02HKoog1Q462VLoilbQAL7gmvELstvOn6CNtlbINopBavA
 
 ###
+GET http://localhost:8080/log
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaGoiLCJjcmVhdGVkIjoxNTY0NjUzMzU2NDI0LCJleHAiOjE1Nzc2MTMzNTZ9.yM3cMmjzI3PDFTzyrqp2NzNO5Z2V1Y55zV-5Qlpd02HKoog1Q462VLoilbQAL7gmvELstvOn6CNtlbINopBavA
 
+###

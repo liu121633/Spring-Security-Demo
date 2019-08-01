@@ -1,4 +1,4 @@
-package org.lhj.controller;
+package org.lhj.doman.model;
 
 import lombok.Data;
 

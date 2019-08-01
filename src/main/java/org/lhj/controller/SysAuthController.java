@@ -1,7 +1,8 @@
 package org.lhj.controller;
 
 import org.lhj.config.JwtTokenProperties;
-import org.lhj.config.JwtTokenUtil;
+import org.lhj.sevice.JwtTokenService;
+import org.lhj.doman.model.UserAuthModel;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -30,12 +31,14 @@ public class SysAuthController {
     private AuthenticationManager authenticationManager;
 
     @Resource
-    JwtTokenUtil jwtTokenUtil;
+    JwtTokenService jwtTokenUtil;
     @Resource
     JwtTokenProperties jwtTokenProperties;
 
     @RequestMapping("/auth")
     public String auth(@RequestBody @Valid UserAuthModel userAuthModel) {
+
+        System.out.println(1);
         UsernamePasswordAuthenticationToken upToken =
                 new UsernamePasswordAuthenticationToken(
                         userAuthModel.getUsername(),
